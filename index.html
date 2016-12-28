@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MBTA Predictor</title>
+</head>
+<body>
+	<h2>Setting this up as a proof of concept for my mbta predictor. Get this running
+	and dumping to a text file and then learn how to make a database for it.</h2>
+	<h3>Let's start with a basic .js file, then implement in knockout, then backbone, get a database, and then .net</h3>
+	<div id="api-call-area">
+		<select data-bind="options: availableTransitLines, value: selectedLine"></select>
+		<button data-bind="click: makeApiCall" type="button" id="call-api">Make a call to the API</button>		
+	</div>
+</body>
+
+<script src="js/lib/knockout-3.4.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/mbta.js"></script>
+</html>
